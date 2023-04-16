@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>新增售票活動</title>
+        <style>
+            input {
+                margin: 1rem 0;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>新增售票活動</h1>
+
+        <form action="addEvent.php" method="post" enctype="multipart/form-data">
+            <label for="title">活動名稱</label>
+            <input type="text" id="title" name="title" /><br />
+
+            <label for="content">活動內容</label>
+            <textarea
+                name="content"
+                id="content"
+                cols="30"
+                rows="10"
+            ></textarea>
+            <br />
+
+            <label for="type">活動類型</label>
+            <!-- <input type="text" id="type" name="type" /><br /> -->
+            <select name="type">
+                <option selected value="">請選擇</option>
+                <option value="演唱會">演唱會</option>
+                <option value="脫口秀">脫口秀</option>
+            </select>
+            <br />
+
+            <label for="banner">宣傳圖</label>
+            <input
+                type="file"
+                id="banner"
+                name="banner"
+                accept="image/*"
+            /><br />
+            <button type="reset">重置</button>
+            <button>送出</button>
+        </form>
+        <br />
+        <!-- <a href="editEvent.php">修改活動內容</a> -->
+    </body>
+</html>

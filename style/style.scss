@@ -1,0 +1,347 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 1.15rem;
+}
+body {
+    margin-top: 3.5rem;
+    nav {
+        padding-left: 1rem;
+        div.navbar-collapse {
+            // margin: 0.5rem 0.75rem;
+            ul {
+                li {
+                    margin: 0 0.5rem;
+                }
+                .nav-link {
+                    border-bottom: 5px solid transparent;
+                }
+
+                .nav-link:hover {
+                    border-bottom: 5px solid rgb(68, 67, 67);
+                }
+            }
+        }
+    }
+
+    div#carouselExampleIndicators {
+        margin: 0 5rem;
+        margin-bottom: 1rem;
+        div.carousel-inner {
+            div.carousel-item {
+                img {
+                    height: 500px;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+
+    section.active {
+        margin: 1.5rem 0;
+        // padding: 0 5rem;
+        text-align: center;
+        h3 {
+            font-size: 2rem;
+            text-align: center;
+        }
+        h4 {
+            font-size: 1.5rem;
+            margin-top: 1rem;
+        }
+        hr {
+            margin: 1.5rem 0;
+        }
+        div.active-list-concert,
+        div.active-list-show {
+            // width: 98%;
+            padding: 3rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            div.card {
+                margin: 0 10px 10px 0;
+                flex: 1;
+                width: calc((100% - 20px) / 3);
+                min-width: calc((100% - 20px) / 3);
+                max-width: calc((100% - 20px) / 3);
+
+                border: 2px solid rgb(185, 185, 185);
+                transition: all 0.1s ease;
+                &:hover {
+                    border: 2px solid rgb(72, 88, 158);
+                }
+                &:nth-child(3n) {
+                    margin-right: 0;
+                }
+                img.card-img-top {
+                    height: 20vw;
+                    object-fit: cover;
+                }
+                div.card-body {
+                    p.card-text {
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 2;
+                        -webkit-box-orient: vertical;
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        background-color: rgb(100, 100, 100);
+        text-align: center;
+        padding: 1.5rem;
+        div.top {
+            a,
+            span {
+                font-size: 0.75rem;
+                text-decoration: none;
+                color: white;
+                margin: 0 0.25rem;
+            }
+        }
+        div.icon {
+            padding: 0.5rem;
+            a {
+                margin: 0 0.75rem;
+                img {
+                    height: 30px;
+                    width: 30px;
+                }
+            }
+        }
+        div.contact {
+            i,
+            span {
+                font-size: 0.75rem;
+            }
+            i {
+                margin-left: 1r;
+            }
+        }
+        div.copyRight {
+            span {
+                font-size: 0.75rem;
+            }
+        }
+    }
+    ////////////////////////////////////////
+    /////////////  login.index  ////////////
+    section.login {
+        // background-color: aquamarine;
+        padding: 5rem 15%;
+        h1 {
+            text-align: center;
+            font-size: 2rem;
+        }
+        h2 {
+            // text-align: center;
+            padding: 0.5rem;
+            font-size: 1.25rem;
+            // background-color: aliceblue;
+        }
+        div#login-form {
+            // background-color: aliceblue;
+            form#register {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin-right: 2rem;
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    li {
+                        list-style-type: none;
+                        text-align: right;
+                        padding-top: 1rem;
+                        label,
+                        input {
+                            font-size: 1rem;
+                        }
+                        input {
+                            width: 350px;
+                            height: 40px;
+                            border-radius: 5px;
+                        }
+                    }
+                }
+                div.button-box {
+                    width: 100%;
+                    text-align: center;
+                    button {
+                        padding: 0.25rem 1rem;
+                        color: white;
+                        border: 0px;
+                        border-radius: 5px;
+                    }
+                    button.reset {
+                        background-color: rgb(46, 180, 180);
+                    }
+                    button.login {
+                        background-color: rgb(148, 28, 24);
+                    }
+                }
+            }
+            a#toRegister {
+                float: right;
+            }
+        }
+    }
+    section.ad {
+        text-align: center;
+        width: 100%;
+        height: 50vh;
+        background-color: aliceblue;
+        h3 {
+            line-height: 50vh;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    body {
+        nav {
+            div.navbar-collapse {
+                margin: 0 1.5rem;
+                ul.nav-active {
+                    li {
+                        margin: 0;
+                        a {
+                            font-size: 1rem;
+                        }
+                        ul.dropdown-menu {
+                            li {
+                                a {
+                                    font-size: 0.5rem;
+                                }
+                            }
+                        }
+                    }
+                }
+                ul.nav-login {
+                    li {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+        div#carouselExampleIndicators {
+            margin: 0 1rem;
+            div.carousel-inner {
+                div.carousel-item {
+                    img {
+                        height: 50vh;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+        section.active {
+            // background-color: antiquewhite;
+            margin-top: 1.5rem;
+            padding: 0 3rem;
+            h3 {
+                font-size: 2rem;
+                text-align: center;
+            }
+            h4 {
+                font-size: 1.5rem;
+                margin-top: 1rem;
+                padding-left: 1rem;
+            }
+            hr {
+                margin: 1.5rem 0;
+            }
+            div.active-list-concert,
+            div.active-list-show {
+                div.card {
+                    // margin: 0 10px 10px 0;
+                    flex: 1;
+                    width: calc((100% - 10px) / 2);
+                    min-width: calc((100% - 10px) / 2);
+                    max-width: calc((100% - 10px) / 2);
+                    &:nth-child(2n) {
+                        margin-right: 0;
+                    }
+                    &:nth-child(3n) {
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 740px) {
+    body {
+        section.active {
+            margin-top: 1.5rem;
+            padding: 0 2rem;
+            h3 {
+                font-size: 2rem;
+                text-align: center;
+            }
+            h4 {
+                font-size: 1.5rem;
+                margin-top: 1rem;
+                padding-left: 1rem;
+            }
+            hr {
+                margin: 1.5rem 0;
+            }
+            div.active-list-concert,
+            div.active-list-show {
+                // justify-content: center;
+                div.card {
+                    margin: 0 10px 10px 0;
+                    flex: 1;
+                    width: 100%;
+                    min-width: 100%;
+                    max-width: 100%;
+                }
+            }
+        }
+
+        footer {
+            background-color: rgb(100, 100, 100);
+            text-align: center;
+            padding: 1rem;
+            div.top {
+                a,
+                span {
+                    font-size: 0.55rem;
+                    text-decoration: none;
+                    color: white;
+                    // margin: 0 0.25rem;
+                }
+            }
+            div.icon {
+                padding: 0.5rem;
+                a {
+                    margin: 0 0.5rem;
+                    img {
+                        height: 30px;
+                        width: 30px;
+                    }
+                }
+            }
+            div.contact {
+                i,
+                span {
+                    font-size: 0.5rem;
+                }
+            }
+            div.copyRight {
+                span {
+                    font-size: 0.5rem;
+                }
+            }
+        }
+    }
+}

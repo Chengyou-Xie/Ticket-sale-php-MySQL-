@@ -1,0 +1,292 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 1.15rem;
+}
+
+body {
+  margin-top: 3.5rem;
+}
+body nav {
+  padding-left: 1rem;
+}
+body nav div.navbar-collapse ul li {
+  margin: 0 0.5rem;
+}
+body nav div.navbar-collapse ul .nav-link {
+  border-bottom: 5px solid transparent;
+}
+body nav div.navbar-collapse ul .nav-link:hover {
+  border-bottom: 5px solid rgb(68, 67, 67);
+}
+body div#carouselExampleIndicators {
+  margin: 0 5rem;
+  margin-bottom: 1rem;
+}
+body div#carouselExampleIndicators div.carousel-inner div.carousel-item img {
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body section.active {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+body section.active h3 {
+  font-size: 2rem;
+  text-align: center;
+}
+body section.active h4 {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+body section.active hr {
+  margin: 1.5rem 0;
+}
+body section.active div.active-list-concert,
+body section.active div.active-list-show {
+  padding: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+body section.active div.active-list-concert div.card,
+body section.active div.active-list-show div.card {
+  margin: 0 10px 10px 0;
+  flex: 1;
+  width: calc((100% - 20px) / 3);
+  min-width: calc((100% - 20px) / 3);
+  max-width: calc((100% - 20px) / 3);
+  border: 2px solid rgb(185, 185, 185);
+  transition: all 0.1s ease;
+}
+body section.active div.active-list-concert div.card:hover,
+body section.active div.active-list-show div.card:hover {
+  border: 2px solid rgb(72, 88, 158);
+}
+body section.active div.active-list-concert div.card:nth-child(3n),
+body section.active div.active-list-show div.card:nth-child(3n) {
+  margin-right: 0;
+}
+body section.active div.active-list-concert div.card img.card-img-top,
+body section.active div.active-list-show div.card img.card-img-top {
+  height: 20vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body section.active div.active-list-concert div.card div.card-body p.card-text,
+body section.active div.active-list-show div.card div.card-body p.card-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+body footer {
+  background-color: rgb(100, 100, 100);
+  text-align: center;
+  padding: 1.5rem;
+}
+body footer div.top a,
+body footer div.top span {
+  font-size: 0.75rem;
+  text-decoration: none;
+  color: white;
+  margin: 0 0.25rem;
+}
+body footer div.icon {
+  padding: 0.5rem;
+}
+body footer div.icon a {
+  margin: 0 0.75rem;
+}
+body footer div.icon a img {
+  height: 30px;
+  width: 30px;
+}
+body footer div.contact i,
+body footer div.contact span {
+  font-size: 0.75rem;
+}
+body footer div.contact i {
+  margin-left: 1r;
+}
+body footer div.copyRight span {
+  font-size: 0.75rem;
+}
+body section.login {
+  padding: 5rem 15%;
+}
+body section.login h1 {
+  text-align: center;
+  font-size: 2rem;
+}
+body section.login h2 {
+  padding: 0.5rem;
+  font-size: 1.25rem;
+}
+body section.login div#login-form form#register {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-right: 2rem;
+}
+body section.login div#login-form form#register ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body section.login div#login-form form#register ul li {
+  list-style-type: none;
+  text-align: right;
+  padding-top: 1rem;
+}
+body section.login div#login-form form#register ul li label,
+body section.login div#login-form form#register ul li input {
+  font-size: 1rem;
+}
+body section.login div#login-form form#register ul li input {
+  width: 350px;
+  height: 40px;
+  border-radius: 5px;
+}
+body section.login div#login-form form#register div.button-box {
+  width: 100%;
+  text-align: center;
+}
+body section.login div#login-form form#register div.button-box button {
+  padding: 0.25rem 1rem;
+  color: white;
+  border: 0px;
+  border-radius: 5px;
+}
+body section.login div#login-form form#register div.button-box button.reset {
+  background-color: rgb(46, 180, 180);
+}
+body section.login div#login-form form#register div.button-box button.login {
+  background-color: rgb(148, 28, 24);
+}
+body section.login div#login-form a#toRegister {
+  float: right;
+}
+body section.ad {
+  text-align: center;
+  width: 100%;
+  height: 50vh;
+  background-color: aliceblue;
+}
+body section.ad h3 {
+  line-height: 50vh;
+}
+
+@media screen and (max-width: 1200px) {
+  body nav div.navbar-collapse {
+    margin: 0 1.5rem;
+  }
+  body nav div.navbar-collapse ul.nav-active li {
+    margin: 0;
+  }
+  body nav div.navbar-collapse ul.nav-active li a {
+    font-size: 1rem;
+  }
+  body nav div.navbar-collapse ul.nav-active li ul.dropdown-menu li a {
+    font-size: 0.5rem;
+  }
+  body nav div.navbar-collapse ul.nav-login li {
+    margin: 0;
+  }
+  body div#carouselExampleIndicators {
+    margin: 0 1rem;
+  }
+  body div#carouselExampleIndicators div.carousel-inner div.carousel-item img {
+    height: 50vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  body section.active {
+    margin-top: 1.5rem;
+    padding: 0 3rem;
+  }
+  body section.active h3 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  body section.active h4 {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    padding-left: 1rem;
+  }
+  body section.active hr {
+    margin: 1.5rem 0;
+  }
+  body section.active div.active-list-concert div.card,
+  body section.active div.active-list-show div.card {
+    flex: 1;
+    width: calc((100% - 10px) / 2);
+    min-width: calc((100% - 10px) / 2);
+    max-width: calc((100% - 10px) / 2);
+  }
+  body section.active div.active-list-concert div.card:nth-child(2n),
+  body section.active div.active-list-show div.card:nth-child(2n) {
+    margin-right: 0;
+  }
+  body section.active div.active-list-concert div.card:nth-child(3n),
+  body section.active div.active-list-show div.card:nth-child(3n) {
+    margin-right: 10px;
+  }
+}
+@media screen and (max-width: 740px) {
+  body section.active {
+    margin-top: 1.5rem;
+    padding: 0 2rem;
+  }
+  body section.active h3 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  body section.active h4 {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    padding-left: 1rem;
+  }
+  body section.active hr {
+    margin: 1.5rem 0;
+  }
+  body section.active div.active-list-concert div.card,
+  body section.active div.active-list-show div.card {
+    margin: 0 10px 10px 0;
+    flex: 1;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+  }
+  body footer {
+    background-color: rgb(100, 100, 100);
+    text-align: center;
+    padding: 1rem;
+  }
+  body footer div.top a,
+  body footer div.top span {
+    font-size: 0.55rem;
+    text-decoration: none;
+    color: white;
+  }
+  body footer div.icon {
+    padding: 0.5rem;
+  }
+  body footer div.icon a {
+    margin: 0 0.5rem;
+  }
+  body footer div.icon a img {
+    height: 30px;
+    width: 30px;
+  }
+  body footer div.contact i,
+  body footer div.contact span {
+    font-size: 0.5rem;
+  }
+  body footer div.copyRight span {
+    font-size: 0.5rem;
+  }
+}/*# sourceMappingURL=style.css.map */
