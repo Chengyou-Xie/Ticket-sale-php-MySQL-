@@ -8,3 +8,6 @@
 
 ## 會員註冊
 ![image](https://github.com/Chengyou-Xie/Ticket-sale-php-MySQL-/blob/main/%E6%9C%83%E5%93%A1%E8%A8%BB%E5%86%8A.gif)
+
+## 新增活動
+![image](https://github.com/Chengyou-Xie/Ticket-sale-php-MySQL-/blob/main/%E6%96%B0%E5%A2%9E%E6%B4%BB%E5%8B%95.gif)
