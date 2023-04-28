@@ -1,5 +1,10 @@
 # Ticket sale (php、MySQL)
-![image](https://user-images.githubusercontent.com/121660049/232319459-d0dc51b3-f520-4c3c-9b6f-266c0dd2f455.png)
-![image](https://user-images.githubusercontent.com/121660049/232319595-07795903-394b-4255-93bb-5a8cfed49eb7.png)
-![image](https://user-images.githubusercontent.com/121660049/232319631-006ec66f-da58-41d2-b2e9-79bfced0245e.png)
+
+## 首頁商品陳列
 ![image](https://github.com/Chengyou-Xie/Ticket-sale-php-MySQL-/blob/ca3c1bc9afa9f7c9f165d3e7ec41e1b1a6dbd174/%E8%A8%82GOGI_-_Google_Chrome_2023-04-28_11-44-41_AdobeExpress.gif)
+
+## 會員登入
+![image](https://github.com/Chengyou-Xie/Ticket-sale-php-MySQL-/blob/main/%E6%9C%83%E5%93%A1%E7%99%BB%E5%85%A5.gif)
+
+## 會員註冊
+![image](https://github.com/Chengyou-Xie/Ticket-sale-php-MySQL-/blob/main/%E6%9C%83%E5%93%A1%E8%A8%BB%E5%86%8A.gif)
